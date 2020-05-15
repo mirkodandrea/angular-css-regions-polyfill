@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('overflow-html-component app is running!');
+    expect(page.getTitleText()).toEqual('angular-css-regions-polyfill app is running!');
   });
 
   afterEach(async () => {

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "overflow-html-component": {
+    "angular-css-regions-polyfill": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/overflow-html-component",
+            "outputPath": "dist/angular-css-regions-polyfill",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "overflow-html-component:build"
+            "browserTarget": "angular-css-regions-polyfill:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "overflow-html-component:build:production"
+              "browserTarget": "angular-css-regions-polyfill:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "overflow-html-component:build"
+            "browserTarget": "angular-css-regions-polyfill:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "overflow-html-component:serve"
+            "devServerTarget": "angular-css-regions-polyfill:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "overflow-html-component:serve:production"
+              "devServerTarget": "angular-css-regions-polyfill:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "overflow-html-component"
+  "defaultProject": "angular-css-regions-polyfill"
 }

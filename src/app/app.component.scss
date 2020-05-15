@@ -4,28 +4,35 @@
   /*clear: both;*/
 }
 
-.myregions {
+
+.pages{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-row-gap: 15px;
+  width: 595px;
+}
+
+.page{
+  /*height: 842px;*/
+  /*width: 595px;*/
+  border:1px solid black;
+  margin: 0px;
+}
+
+.header{
+  height: 140px;
+}
+
+.footer{
+  height: 140px;
+  width: 100%;
+}
+
+.page-content {
   flow-from: article;
-  background-color: #dedede;
-  height: 200px;
+  height: 600px;
+  width: 595px;
+  max-width: 595px;
 }
 
-.myregions::before{
-  content: header2;
-}
-
-.myregions::after{
-  content: footer2;
-}
-
-.region-small-height {
-  height: 200px;
-}
-
-p {
-  line-height: 1.6em;
-} 
-
-.header {
-  display: block!important;
-}

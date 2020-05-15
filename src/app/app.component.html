@@ -1,12 +1,9 @@
-{{pages}}
-
-<div *ngFor="let p of getPages()">
-    {{p}}
-    
-    <ng-container [ngTemplateOutlet]="header"></ng-container>
-    <div class="myregions"></div>
-    <ng-container [ngTemplateOutlet]="footer"></ng-container>
-
+<div class="pages">
+<div *ngFor="let p of getPages()" class="page">
+    <div  class="header"><ng-container [ngTemplateOutlet]="header"></ng-container></div>
+    <div class="page-content"></div>
+    <div class="footer"><ng-container [ngTemplateOutlet]="footer"></ng-container></div>
+</div>
 </div>
 <div id="source">
     <ng-content></ng-content>

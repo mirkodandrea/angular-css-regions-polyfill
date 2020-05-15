@@ -1,0 +1,31 @@
+
+#source {
+  flow-into: article;
+  /*clear: both;*/
+}
+
+.myregions {
+  flow-from: article;
+  background-color: #dedede;
+  height: 200px;
+}
+
+.myregions::before{
+  content: header2;
+}
+
+.myregions::after{
+  content: footer2;
+}
+
+.region-small-height {
+  height: 200px;
+}
+
+p {
+  line-height: 1.6em;
+} 
+
+.header {
+  display: block!important;
+}
